@@ -3,26 +3,23 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import CVCCanvasActivity from '../components/activities/CVCCanvasActivity'; // Import the component
+
 // import './ActivityAreaPage.css'; // Assuming no specific CSS or it's obsolete
 
 function ActivityAreaPage() {
   return (
-    <Container maxWidth="md" sx={{ py: 4 }}> {/* Consistent padding and max-width */}
-      <Box sx={{ textAlign: 'center' }}>
+    <Container maxWidth="lg" sx={{ py: 4, display: 'flex', flexDirection: 'column', alignItems: 'center' }}> {/* Changed to lg for more space, added flex for centering canvas container */}
+      <Box sx={{ textAlign: 'center', mb: 2 }}> {/* Added mb for spacing */}
         <Typography variant="h4" component="h2" gutterBottom sx={{ color: 'text.primary' }}>
-          Activity Area
+          CVC Word Builder
         </Typography>
-        <Typography variant="subtitle1" color="text.secondary">
-          Select an activity to begin learning!
-        </Typography>
-        {/*
-          This page will later render specific activities.
-          Future work: Implement routing or state logic to display one of the
-          placeholder activity components from src/components/activities/
-          (e.g., PhonemicAwarenessActivity, PhonicsActivity, etc.) here.
-          Those activities would then also need to be styled with MUI.
-        */}
+        {/* Removed old placeholder: <Typography variant="subtitle1" color="text.secondary"> Select an activity to begin learning! </Typography> */}
       </Box>
+
+      {/* Render the CVCCanvasActivity component */}
+      <CVCCanvasActivity />
+
     </Container>
   );
 }
