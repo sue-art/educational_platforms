@@ -1,8 +1,4 @@
-/* literacy-learners-app/src/App.css */
-/* Remove default create-react-app specific styles like .App-logo, .App-header, etc. */
-/* Keep or add very minimal global app container styles if needed */
-
+/* Basic styles for the App will go here */
 .App {
-  /* text-align: center; */ /* This might have been here from CRA default */
-  /* If you want to center content within pages, do it at page level or specific component level */
+  text-align: center;
 }

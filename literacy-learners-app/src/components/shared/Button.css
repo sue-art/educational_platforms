@@ -1,0 +1,37 @@
+/* src/components/shared/Button.css */
+.custom-button {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.custom-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
+}
+
+.custom-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transform: translateY(1px);
+}
+
+.custom-button.secondary {
+  background-color: #008CBA;
+}
+.custom-button.secondary:hover {
+  background-color: #007ba7;
+}
+.custom-button.secondary:active {
+  background-color: #006a94;
+}

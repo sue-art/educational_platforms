@@ -1,0 +1,53 @@
+/* src/pages/DashboardPage.css */
+.dashboard-page {
+  padding: 20px;
+  background-color: #f0f8ff; /* Light, friendly AliceBlue background */
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-page h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.dashboard-page > p {
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.progress-section,
+.activity-links {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.progress-section h3,
+.activity-links h3 {
+  font-size: 1.8em;
+  color: #2a2a72;
+  margin-bottom: 20px;
+}
+
+.activity-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.activity-buttons .custom-button { /* This was in the user's file, assuming it targets the Button component */
+    min-width: 200px;
+}

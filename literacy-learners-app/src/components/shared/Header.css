@@ -1,0 +1,44 @@
+/* literacy-learners-app/src/components/shared/Header.css */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #4a90e2; /* Example background */
+  color: white;
+}
+
+.app-header .app-title-nav {
+  display: flex;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem; /* Adjusted size */
+  margin-right: 20px; /* Space between title and nav */
+}
+
+.app-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.app-header nav ul li {
+  margin-left: 15px;
+}
+
+.app-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.app-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ScoreDisplayComponent specific styling is in its own CSS file,
+   but this ensures it's positioned correctly by the flex container. */
