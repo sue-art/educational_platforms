@@ -1,0 +1,18 @@
+/* literacy-learners-app/src/components/layout/NavigationComponent.css */
+.app-nav {
+  background-color: #f7f7f7;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.app-nav a:hover {
+  text-decoration: underline;
+}

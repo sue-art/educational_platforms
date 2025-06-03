@@ -1,0 +1,15 @@
+/* literacy-learners-app/src/components/layout/HeaderComponent.css */
+.app-header {
+  background-color: #4a90e2;
+  padding: 1rem;
+  color: white;
+  /* text-align: center; */ /* Remove if you want items side-by-side */
+  display: flex; /* Added for layout */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Puts h1 left, score right */
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}

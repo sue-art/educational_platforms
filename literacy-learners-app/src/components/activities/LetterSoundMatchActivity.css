@@ -1,0 +1,91 @@
+/* literacy-learners-app/src/components/activities/LetterSoundMatchActivity.css */
+.letter-sound-match-activity {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.letter-display {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.sound-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sound-option-button {
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.sound-option-button:hover:not(:disabled) {
+  background-color: #e9e9e9;
+  border-color: #bbb;
+}
+
+.sound-option-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.sound-option-button.correct {
+  background-color: #d4edda; /* Green for correct */
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.sound-option-button.incorrect {
+  background-color: #f8d7da; /* Red for incorrect */
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.sound-option-button.correct-missed {
+  /* Style for the actual correct answer if a wrong one was picked and we want to highlight it */
+  /* For now, let's not make it too visually noisy, but this class is available */
+   border: 2px dashed #28a745; /* Example: dashed green border */
+}
+
+
+.feedback-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.feedback-message.correct { /* If we want to style the p tag itself */
+    color: #155724;
+}
+.feedback-message.incorrect {
+    color: #721c24;
+}
+
+.next-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.next-button:hover {
+    background-color: #357abd;
+}
