@@ -1,0 +1,8 @@
+/* literacy-learners-app/src/components/layout/FooterComponent.css */
+.app-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
