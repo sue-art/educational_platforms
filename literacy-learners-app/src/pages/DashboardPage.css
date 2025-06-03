@@ -1,53 +1,22 @@
-/* src/pages/DashboardPage.css */
+/* literacy-learners-app/src/pages/DashboardPage.css */
+/* Styles that might remain or be adjusted: */
 .dashboard-page {
-  padding: 20px;
-  background-color: #f0f8ff; /* Light, friendly AliceBlue background */
-  min-height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* background-color: #f0f8ff; /* Theme background is now applied by CssBaseline via theme's palette.background.default */
+  min-height: calc(100vh - 120px); /* Adjust if header/footer height changes, ensures page fills screen if content is short. 120px is a guess for header+footer. This can be useful if page content is very short. */
+  /* display: flex; /* Container handles centering of its content block */
+  /* flex-direction: column; */
+  /* align-items: center; */
 }
 
-.dashboard-page h2 {
-  color: #333;
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  text-align: center;
-}
+/* Most other styles related to .progress-section, .activity-links, h2, p, etc.
+   are now largely handled by Typography, Paper, Container, and sx props.
+   The .activity-buttons class is still used by a Box for flex layout of buttons,
+   but its styling (gap) is now done via sx prop using theme.spacing(2).
+*/
 
-.dashboard-page > p {
-  color: #555;
-  font-size: 1.2em;
-  margin-bottom: 30px;
-  text-align: center;
-}
+/* .dashboard-page h2, .dashboard-page > p, .progress-section h3, .activity-links h3
+   are now styled with MUI Typography components and sx prop. */
 
-.progress-section,
-.activity-links {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-}
-
-.progress-section h3,
-.activity-links h3 {
-  font-size: 1.8em;
-  color: #2a2a72;
-  margin-bottom: 20px;
-}
-
-.activity-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.activity-buttons .custom-button { /* This was in the user's file, assuming it targets the Button component */
-    min-width: 200px;
-}
+/* .activity-buttons .custom-button { /* This targeted the old custom button and is no longer needed */
+    /* min-width: 200px; /* minWidth is now on MUI Button's sx prop */
+/* } */
