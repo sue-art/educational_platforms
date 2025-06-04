@@ -1,6 +1,5 @@
 // literacy-learners-app/src/components/layout/AppLayoutComponent.js
 import React from 'react';
-import { Navbar, Typography } from "@material-tailwind/react";
 import HeaderComponent from './HeaderComponent';
 import NavigationComponent from './NavigationComponent';
 import FooterComponent from './FooterComponent';
