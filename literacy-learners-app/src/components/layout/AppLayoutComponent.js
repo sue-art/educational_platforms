@@ -1,16 +1,16 @@
 // literacy-learners-app/src/components/layout/AppLayoutComponent.js
 import React from 'react';
+import { Navbar, Typography } from "@material-tailwind/react";
 import HeaderComponent from './HeaderComponent';
 import NavigationComponent from './NavigationComponent';
 import FooterComponent from './FooterComponent';
-import './AppLayoutComponent.css'; // Import the CSS
 
 const AppLayoutComponent = ({ children }) => {
   return (
-    <div className="app-layout">
+    <div className="min-h-screen flex flex-col">
       <HeaderComponent />
       <NavigationComponent />
-      <main>{children}</main>
+      <main className="flex-grow p-4">{children}</main>
       <FooterComponent />
     </div>
   );

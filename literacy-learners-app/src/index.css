@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* literacy-learners-app/src/index.css */
 body {
   margin: 0;
