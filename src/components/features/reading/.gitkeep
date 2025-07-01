@@ -1,0 +1,2 @@
+# This file is to ensure the directory for the 'reading' feature is created.
+# Further subdirectories (components, hooks, context) would be created when implementing this feature.
