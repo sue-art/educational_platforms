@@ -1,0 +1,322 @@
+{
+  "phonemeCards": [
+    {
+      "phoneme": "/b/",
+      "example": "as in ball",
+      "likelyToSeeWrite": "b",
+      "mightAlsoSeeWrite": ["bb", "bh"],
+  "examples": {
+        "ball": ["b", "a", "l", "l"],
+        "bubble": ["b", "u", "bb", "l", "e"],
+        "ribbon": ["r", "i", "bb", "o", "n"]
+  },
+      "notes": [
+        "bb - b is often doubled after the short vowel in a two-syllable word (e.g., bubble)",
+        "bt - makes the /t/ sound",
+        "mb - makes the /m/ sound"
+      ]
+    },
+    {
+      "phoneme": "/ch/",
+      "example": "as in chin",
+      "likelyToSeeWrite": "ch",
+      "mightAlsoSeeWrite": ["tch", "t (as in future)"],
+      "examples": {
+            "chin" :["ch", "i", "n"],
+            "future": ["f", "u", "t", "u", "r", "e"]
+        },
+      "notes": [
+        "ch also makes /k/ (in chord), and /sh/ (in chef)",
+        "tch - is only used after a single vowel that makes its short sound"
+      ]
+    },
+    {
+      "phoneme": "/d/",
+      "example": "as in dog",
+      "likelyToSeeWrite": "d",
+      "mightAlsoSeeWrite": ["dd", "-ed (as in borrowed)"],
+        "examples": {
+                "dog" :["d", "o", "g"],
+                "borrowed": ["b", "o", "r", "r", "o", "w", "ed"]
+            },
+      "notes": [
+        "dd - d is often doubled after the short vowel in a two-syllable word (e.g., daddy)",
+        "ed - can make both the /d/ sound and the /t/ sound"
+      ]
+    },
+    {
+      "phoneme": "/f/",
+      "example": "as in fat",
+      "likelyToSeeWrite": "f",
+      "mightAlsoSeeWrite": ["ff", "ph", "-lf", "-gh (in laugh)"],
+        "examples": {
+                "fat" :["f", "a", "t"],
+                "cliff": ["c", "l", "i", "ff"],
+                "phone": ["ph", "o", "n", "e"],
+                "laugh": ["l", "a", "u", "g", "h"],
+                "calf": ["c", "a", "l", "f"],
+                "often": ["o", "f", "t", "e", "n"]
+            },
+      "notes": [
+        "ff - f is often doubled after the short vowel in a two-syllable word (e.g., taffy)"
+      ]
+    },
+    {
+      "phoneme": "/g/",
+      "example": "as in game",
+      "likelyToSeeWrite": "g",
+      "mightAlsoSeeWrite": ["gg", "gh-", "gu- (as in guide)"],
+      "examples": {
+        "game" :["g", "a", "m", "e"],
+        "grapes": ["g", "r", "a", "p", "e", "s"],
+        "egg": ["e", "g", "g"],
+        "ghost": ["g", "h", "o", "s", "t"],
+        "guest": ["g", "u", "e", "s", "t"],
+        "catalogue": ["c", "a", "t", "a", "l", "o", "g", "u", "e"]
+      },
+      "notes": [
+        "gg - g is often doubled after the short vowel in a two-syllable word (e.g., giggle)",
+        "g - makes /j/ when it appears before e, i, or y. Otherwise, it says /g/."
+      ]
+    },
+    {
+      "phoneme": "/h/",
+      "example": "as in hat",
+      "likelyToSeeWrite": "h",
+      "mightAlsoSeeWrite": ["wh"],
+        "examples": {
+            "hat" :["h", "a", "t"],
+            "who": ["wh", "o"],
+            "whole": ["wh", "o", "l", "e"]
+        },
+      "notes": [
+        "The letter h often appears in many graphemes, such as 'ph', 'sh', 'igh'"
+      ]
+    },
+    {
+      "phoneme": "/j/",
+      "example": "as in jar",
+      "likelyToSeeWrite": "j",
+      "mightAlsoSeeWrite": ["j", "dge", "g (as in giraffe)", "ge (as in cage)"],
+        "examples": {
+        "jar" :["j", "a", "r"],
+        "jellyfish": ["j", "e", "l", "l", "y", "f", "i", "s", "h"],
+        "cage": ["c", "a", "g", "e"],
+        "giraffe": ["g", "i", "r", "a", "f", "f", "e"],
+        "edge": ["e", "d", "g", "e"],
+        "soldier": ["s", "o", "l", "d", "i", "e", "r"],
+        "exaggerate": ["e", "x", "a", "g", "g", "e", "r", "a", "t"]
+        },
+      "notes": [
+        "Words don’t end in 'j'",
+        "g says /j/ before e, i, or y. Otherwise, it says /g/.",
+        "dge is used after a single vowel with its short sound"
+      ]
+    },
+    {
+      "phoneme": "/k/",
+      "example": "as in kite",
+      "likelyToSeeWrite": "c",
+      "mightAlsoSeeWrite": ["k", "ck", "ch", "-que"],
+        "examples": {
+        "kite" :["k", "i", "t", "e"],
+        "cat": ["c", "a", "t"],
+        "Christmas": ["C", "h", "r", "i", "s", "t", "m", "a", "s"],
+        "acclaim": ["a", "c", "c", "l", "a", "i", "m"],
+        "folk": ["f", "o", "l", "k"],
+        "queen": ["q", "u", "e", "e", "n"],
+        "back": ["b", "a", "c", "k"],
+        "box": ["b", "o", "x"]
+      },
+
+      "notes": [
+        "c says /s/ when in front of e, i, or y. Otherwise, it says /k/.",
+        "ck is used after a single vowel with its short sound",
+        "k is silent in kn"
+      ]
+    },
+    {
+      "phoneme": "/l/",
+      "example": "as in last",
+      "likelyToSeeWrite": "l",
+      "mightAlsoSeeWrite": ["ll", "-le (as in little)"],
+      "examples": {
+        "last" :["l", "a", "s", "t"],
+        "spell": ["sp", "e", "ll"],
+        "little": ["l", "i", "t", "t", "le"]
+      },
+      "notes": [
+        "-le makes the C+le syllable"
+      ]
+    },
+    {
+      "phoneme": "/m/",
+      "example": "as in mat",
+      "likelyToSeeWrite": "m",
+      "mightAlsoSeeWrite": ["mm", "-mn", "mb", "lm"],
+      "examples": {
+        "mat" :["m", "a", "t"],
+        "monkey": ["m", "o", "n", "k", "e", "y"],
+        "summer": ["s", "u", "mm", "e", "r"],
+        "climb": ["c", "l", "i", "mb"],
+        "autumn": ["a", "u", "t", "u", "mn"],
+        "palm": ["p", "a", "l", "m"]
+      },
+      "notes": [
+        "mm - m is often doubled after the short vowel in a two-syllable word (e.g., mommy)"
+      ]
+    },
+    {
+      "phoneme": "/n/",
+      "example": "as in neck",
+      "likelyToSeeWrite": "n",
+      "mightAlsoSeeWrite": ["nn", "kn", "gn", "pn", "mn"],
+      "examples": {
+        "neck" :["n", "e", "c", "k"],
+        "funny": ["f", "u", "nn", "y"],
+        "knight": ["k", "n", "i", "g", "h", "t"],
+        "gnat": ["g", "n", "a", "t"],
+        "pneumonia": ["p", "n", "e", "u", "m", "o", "n", "i", "a"]
+      },
+      "notes": [
+        "nn - n is often doubled after the short vowel in a two-syllable word (e.g., funny)"
+      ]
+    },
+    {
+      "phoneme": "/ng/",
+      "example": "as in sing",
+      "likelyToSeeWrite": "ng",
+      "mightAlsoSeeWrite": ["n (as in think)"],
+      "examples": {
+        "sing" :["s", "i", "ng"],
+        "think": ["th", "i", "n", "k"],
+        "kangaroo": ["k", "a", "ng", "a", "r", "o", "o"]
+      },
+      "notes": [
+        "The letter n makes the /ng/ sound in words like 'think' or 'kangaroo'"
+      ]
+    },
+    {
+      "phoneme": "/p/",
+      "example": "as in pop",
+      "likelyToSeeWrite": "p",
+      "mightAlsoSeeWrite": ["pp (as in happy)"],
+      "examples": {
+        "pop" :["p", "o", "p"],
+        "happy": ["h", "a", "pp", "y"],
+        "jumped": ["j", "u", "m", "p", "e", "d"]
+      },
+      "notes": [
+        "pp - p is often doubled after the short vowel in a two-syllable word (e.g., happy)",
+        "p is silent in ps-, pt-"
+      ]
+    },
+    {
+      "phoneme": "/kw/",
+      "example": "as in quick",
+      "likelyToSeeWrite": "qu",
+      "mightAlsoSeeWrite": [],
+      "examples": {
+        "quick" :["qu", "i", "c", "k"],
+        "queen": ["qu", "e", "e", "n"],
+        "question": ["qu", "e", "s", "t", "i", "o", "n"],
+        "cheque": ["c", "h", "e", "qu", "e"]
+      },
+      "notes": [
+        "q always needs the 'u', so 'u' is not a vowel in 'qu'",
+        "In rare cases, qu says /k/ as in cheque"
+      ]
+    },
+    {
+      "phoneme": "/r/",
+      "example": "as in run",
+      "likelyToSeeWrite": "r",
+      "mightAlsoSeeWrite": ["rr", "wr", "rh (as in rhombus)"],
+      "examples": {
+        "run" :["r", "u", "n"],
+        "robot": ["r", "o", "b", "o", "t"],
+        "carrot": ["c", "a", "r", "r", "o", "t"],
+        "wrong": ["w", "r", "o", "n", "g"],
+        "rhyme": ["r", "h", "y", "m", "e"]
+      },
+      "notes": [
+        "rr - r is often doubled after the short vowel in a two-syllable word (e.g., sorry)"
+      ]
+    },
+    {
+      "phoneme": "/s/",
+      "example": "as in sit",
+      "likelyToSeeWrite": "s",
+      "mightAlsoSeeWrite": ["ss", "c", "-se", "sc", "-ce", "ps"],
+      "examples": {
+        "sit" :["s", "i", "t"],
+        "mess": ["m", "e", "s", "s"],
+        "circus": ["c", "i", "r", "c", "u", "s"],
+        "science": ["s", "c", "i", "e", "n", "c", "e"],
+        "psychology": ["p", "s", "y", "c", "h", "o", "l", "o", "g", "y"],
+        "listen": ["l", "i", "s", "t", "e", "n"],
+        "rice": ["r", "i", "c", "e"],
+        "horse": ["h", "o", "r", "s", "e"]
+      },
+      "notes": [
+        "ss - s is often doubled after a short vowel (e.g., fuss)",
+        "s says /z/ as in criticise",
+        "c says /s/ before e, i, or y. Otherwise, it says /k/."
+      ]
+    },
+    {
+      "phoneme": "/sh/",
+      "example": "as in shop",
+      "likelyToSeeWrite": "sh",
+      "mightAlsoSeeWrite": [
+        "ti-", "ch", "s", "sci-", "si-", "shi-", "ss", "ssi-", "ci-", "sch-", "sc-"
+      ],
+        "examples": {
+            "shop" :["sh", "o", "p"],
+            "chef": ["ch", "e", "f"],
+            "science": ["s", "c", "i", "e", "n", "c", "e"],
+            "mission": ["m", "i", "s", "s", "i", "o", "n"],
+            "sure": ["s", "u", "r", "e"],
+            "sugar": ["s", "u", "g", "a", "r"]
+        },
+      "notes": []
+    },
+    {
+      "phoneme": "/zh/",
+      "example": "as in fusion",
+      "likelyToSeeWrite": "si",
+      "mightAlsoSeeWrite": ["s", "ti-", "z", "-ge", "g", "j (as in deja vu)"],
+      "notes": []
+    },
+    {
+      "phoneme": "/t/",
+      "example": "as in top",
+      "likelyToSeeWrite": "t",
+      "mightAlsoSeeWrite": ["tt", "pt-", "-bt", "-ed (as in jumped)"],
+      "examples": {
+        "top" :["t", "o", "p"],
+        "bat": ["b", "a", "t"],
+        "butter": ["b", "u", "t", "t", "e", "r"],
+        "Thomas": ["T", "h", "o", "m", "a", "s"],
+        "jumped": ["j", "u", "m", "p", "e", "d"]
+      },
+      "notes": [
+        "tt - t is often doubled after the short vowel in a two-syllable word (e.g., fatty)"
+      ]
+    },
+    {
+      "phoneme": "/th/",
+      "example": "as in thing",
+      "likelyToSeeWrite": "th",
+      "mightAlsoSeeWrite": [],
+      "examples": {
+        "thing" :["th", "i", "n", "g"],
+        "that": ["th", "a", "t"],
+        "think": ["th", "i", "n", "k"]
+      },
+      "notes": [
+        "th exists in two forms: voiced [that] and unvoiced [think]"
+      ]
+    }
+  ]
+}

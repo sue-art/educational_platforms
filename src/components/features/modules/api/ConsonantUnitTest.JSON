@@ -1,0 +1,388 @@
+{
+  "testId": "consonant-unit-test-001",
+  "readingLevel": 2,
+  "targetAgeRange": "5-7 years",
+  "estimatedTimeMinutes": 15,
+  "skillsAssessed": [
+    "Phonemic Awareness",
+    "Letter-Sound Correspondence",
+    "Sound Identification",
+    "Rhyming",
+    "Sound Blending",
+    "Alliteration",
+    "Sound Position Recognition"
+  ],
+  "questions": [
+    {
+      "questionId": "b-sound-id-001",
+      "questionType": "Sound Identification",
+      "difficulty": 1,
+      "prompt": "Which letter makes the /b/ sound as in 'ball'?",
+      "audioPrompt": "/audio/phonemes/b-sound.mp3",
+      "options": ["b", "d", "p", "g"],
+      "correctAnswer": "b",
+      "phonemesFeatured": ["/b/"],
+      "hints": ["This letter makes a sound with your lips pressed together."],
+      "feedback": {
+        "correct": "Great job! The letter 'b' makes the /b/ sound.",
+        "incorrect": "The letter 'b' makes the /b/ sound. Listen again and try once more."
+      }
+    },
+    {
+      "questionId": "b-rhyme-001",
+      "questionType": "Rhyming",
+      "difficulty": 1,
+      "prompt": "Which word rhymes with 'bat'?",
+      "audioPrompt": "/audio/words/bat.mp3",
+      "options": ["ball", "cat", "big", "dog"],
+      "correctAnswer": "cat",
+      "phonemesFeatured": ["/b/", "/a/", "/t/"],
+      "hints": ["Listen for words that end with the same sound."],
+      "feedback": {
+        "correct": "Excellent! 'Bat' and 'cat' rhyme because they both end with 'at'.",
+        "incorrect": "'Bat' and 'cat' rhyme because they both end with 'at'."
+      }
+    },
+    {
+      "questionId": "b-blend-001",
+      "questionType": "Sound Blending",
+      "difficulty": 1,
+      "prompt": "Listen to these sounds: /b/ /a/ /t/. What word do they make?",
+      "audioPrompt": "/audio/blending/b-a-t.mp3",
+      "options": ["bat", "bad", "bag", "bed"],
+      "correctAnswer": "bat",
+      "phonemesFeatured": ["/b/", "/a/", "/t/"],
+      "hints": ["Say each sound slowly, then try to say them faster together."],
+      "feedback": {
+        "correct": "Perfect! When you blend /b/ /a/ /t/, you get 'bat'.",
+        "incorrect": "When you blend /b/ /a/ /t/, you get 'bat'. Try again by saying the sounds faster together."
+      }
+    },
+    {
+      "questionId": "b-alliteration-001",
+      "questionType": "Alliteration",
+      "difficulty": 1,
+      "prompt": "Which words start with the same sound as 'ball'?",
+      "audioPrompt": "/audio/words/ball.mp3",
+      "options": ["boy", "dog", "cat", "pen"],
+      "correctAnswer": "boy",
+      "phonemesFeatured": ["/b/"],
+      "hints": ["Listen for the first sound in each word."],
+      "feedback": {
+        "correct": "Great job! 'Ball' and 'boy' both start with the /b/ sound.",
+        "incorrect": "'Ball' and 'boy' both start with the /b/ sound."
+      }
+    },
+    {
+      "questionId": "b-position-001",
+      "questionType": "Initial, Medial, Final Sound",
+      "difficulty": 1,
+      "prompt": "Where do you hear the /b/ sound in 'bubble'?",
+      "audioPrompt": "/audio/words/bubble.mp3",
+      "options": ["Beginning", "Middle", "End", "Beginning and Middle"],
+      "correctAnswer": "Beginning and Middle",
+      "phonemesFeatured": ["/b/"],
+      "hints": ["Say the word slowly and listen for the /b/ sound."],
+      "feedback": {
+        "correct": "Excellent! In 'bubble', you hear the /b/ sound at the beginning and in the middle.",
+        "incorrect": "In 'bubble', you hear the /b/ sound at the beginning and in the middle."
+      }
+    },
+    {
+      "questionId": "ch-sound-id-001",
+      "questionType": "Sound Identification",
+      "difficulty": 2,
+      "prompt": "Which letters make the /ch/ sound as in 'chin'?",
+      "audioPrompt": "/audio/phonemes/ch-sound.mp3",
+      "options": ["ch", "sh", "th", "wh"],
+      "correctAnswer": "ch",
+      "phonemesFeatured": ["/ch/"],
+      "hints": ["This sound is made with your tongue behind your teeth, releasing air."],
+      "feedback": {
+        "correct": "Great job! The letters 'ch' make the /ch/ sound.",
+        "incorrect": "The letters 'ch' make the /ch/ sound. Listen again and try once more."
+      }
+    },
+    {
+      "questionId": "ch-rhyme-001",
+      "questionType": "Rhyming",
+      "difficulty": 2,
+      "prompt": "Which word rhymes with 'chip'?",
+      "audioPrompt": "/audio/words/chip.mp3",
+      "options": ["chin", "ship", "chat", "cheap"],
+      "correctAnswer": "ship",
+      "phonemesFeatured": ["/ch/", "/i/", "/p/"],
+      "hints": ["Listen for words that end with the same sound."],
+      "feedback": {
+        "correct": "Excellent! 'Chip' and 'ship' rhyme because they both end with 'ip'.",
+        "incorrect": "'Chip' and 'ship' rhyme because they both end with 'ip'."
+      }
+    },
+    {
+      "questionId": "d-blend-001",
+      "questionType": "Sound Blending",
+      "difficulty": 1,
+      "prompt": "Listen to these sounds: /d/ /o/ /g/. What word do they make?",
+      "audioPrompt": "/audio/blending/d-o-g.mp3",
+      "options": ["dog", "dig", "dug", "dot"],
+      "correctAnswer": "dog",
+      "phonemesFeatured": ["/d/", "/o/", "/g/"],
+      "hints": ["Say each sound slowly, then try to say them faster together."],
+      "feedback": {
+        "correct": "Perfect! When you blend /d/ /o/ /g/, you get 'dog'.",
+        "incorrect": "When you blend /d/ /o/ /g/, you get 'dog'. Try again by saying the sounds faster together."
+      }
+    },
+    {
+      "questionId": "f-alliteration-001",
+      "questionType": "Alliteration",
+      "difficulty": 1,
+      "prompt": "Which words start with the same sound as 'fat'?",
+      "audioPrompt": "/audio/words/fat.mp3",
+      "options": ["fun", "sat", "van", "pig"],
+      "correctAnswer": "fun",
+      "phonemesFeatured": ["/f/"],
+      "hints": ["Listen for the first sound in each word."],
+      "feedback": {
+        "correct": "Great job! 'Fat' and 'fun' both start with the /f/ sound.",
+        "incorrect": "'Fat' and 'fun' both start with the /f/ sound."
+      }
+    },
+    {
+      "questionId": "g-position-001",
+      "questionType": "Initial, Medial, Final Sound",
+      "difficulty": 1,
+      "prompt": "Where do you hear the /g/ sound in 'egg'?",
+      "audioPrompt": "/audio/words/egg.mp3",
+      "options": ["Beginning", "Middle", "End", "Beginning and End"],
+      "correctAnswer": "End",
+      "phonemesFeatured": ["/g/"],
+      "hints": ["Say the word slowly and listen for the /g/ sound."],
+      "feedback": {
+        "correct": "Excellent! In 'egg', you hear the /g/ sound at the end.",
+        "incorrect": "In 'egg', you hear the /g/ sound at the end."
+      }
+    },
+    {
+      "questionId": "h-sound-id-001",
+      "questionType": "Sound Identification",
+      "difficulty": 1,
+      "prompt": "Which letter makes the /h/ sound as in 'hat'?",
+      "audioPrompt": "/audio/phonemes/h-sound.mp3",
+      "options": ["h", "j", "k", "w"],
+      "correctAnswer": "h",
+      "phonemesFeatured": ["/h/"],
+      "hints": ["This sound is made by breathing out, like when you fog up a window."],
+      "feedback": {
+        "correct": "Great job! The letter 'h' makes the /h/ sound.",
+        "incorrect": "The letter 'h' makes the /h/ sound. Listen again and try once more."
+      }
+    },
+    {
+      "questionId": "j-rhyme-001",
+      "questionType": "Rhyming",
+      "difficulty": 2,
+      "prompt": "Which word rhymes with 'jar'?",
+      "audioPrompt": "/audio/words/jar.mp3",
+      "options": ["jump", "car", "jet", "job"],
+      "correctAnswer": "car",
+      "phonemesFeatured": ["/j/", "/a/", "/r/"],
+      "hints": ["Listen for words that end with the same sound."],
+      "feedback": {
+        "correct": "Excellent! 'Jar' and 'car' rhyme because they both end with 'ar'.",
+        "incorrect": "'Jar' and 'car' rhyme because they both end with 'ar'."
+      }
+    },
+    {
+      "questionId": "k-blend-001",
+      "questionType": "Sound Blending",
+      "difficulty": 1,
+      "prompt": "Listen to these sounds: /k/ /i/ /t/. What word do they make?",
+      "audioPrompt": "/audio/blending/k-i-t.mp3",
+      "options": ["kit", "cat", "kite", "kid"],
+      "correctAnswer": "kit",
+      "phonemesFeatured": ["/k/", "/i/", "/t/"],
+      "hints": ["Say each sound slowly, then try to say them faster together."],
+      "feedback": {
+        "correct": "Perfect! When you blend /k/ /i/ /t/, you get 'kit'.",
+        "incorrect": "When you blend /k/ /i/ /t/, you get 'kit'. Try again by saying the sounds faster together."
+      }
+    },
+    {
+      "questionId": "l-alliteration-001",
+      "questionType": "Alliteration",
+      "difficulty": 1,
+      "prompt": "Which words start with the same sound as 'last'?",
+      "audioPrompt": "/audio/words/last.mp3",
+      "options": ["leg", "fast", "map", "nest"],
+      "correctAnswer": "leg",
+      "phonemesFeatured": ["/l/"],
+      "hints": ["Listen for the first sound in each word."],
+      "feedback": {
+        "correct": "Great job! 'Last' and 'leg' both start with the /l/ sound.",
+        "incorrect": "'Last' and 'leg' both start with the /l/ sound."
+      }
+    },
+    {
+      "questionId": "m-position-001",
+      "questionType": "Initial, Medial, Final Sound",
+      "difficulty": 1,
+      "prompt": "Where do you hear the /m/ sound in 'summer'?",
+      "audioPrompt": "/audio/words/summer.mp3",
+      "options": ["Beginning", "Middle", "End", "Beginning and Middle"],
+      "correctAnswer": "Middle",
+      "phonemesFeatured": ["/m/"],
+      "hints": ["Say the word slowly and listen for the /m/ sound."],
+      "feedback": {
+        "correct": "Excellent! In 'summer', you hear the /m/ sound in the middle.",
+        "incorrect": "In 'summer', you hear the /m/ sound in the middle."
+      }
+    },
+    {
+      "questionId": "n-sound-id-001",
+      "questionType": "Sound Identification",
+      "difficulty": 1,
+      "prompt": "Which letter makes the /n/ sound as in 'neck'?",
+      "audioPrompt": "/audio/phonemes/n-sound.mp3",
+      "options": ["n", "m", "d", "v"],
+      "correctAnswer": "n",
+      "phonemesFeatured": ["/n/"],
+      "hints": ["This sound is made with your tongue touching the roof of your mouth behind your teeth."],
+      "feedback": {
+        "correct": "Great job! The letter 'n' makes the /n/ sound.",
+        "incorrect": "The letter 'n' makes the /n/ sound. Listen again and try once more."
+      }
+    },
+    {
+      "questionId": "ng-rhyme-001",
+      "questionType": "Rhyming",
+      "difficulty": 3,
+      "prompt": "Which word rhymes with 'sing'?",
+      "audioPrompt": "/audio/words/sing.mp3",
+      "options": ["song", "ring", "sun", "sink"],
+      "correctAnswer": "ring",
+      "phonemesFeatured": ["/ng/", "/i/"],
+      "hints": ["Listen for words that end with the same sound."],
+      "feedback": {
+        "correct": "Excellent! 'Sing' and 'ring' rhyme because they both end with 'ing'.",
+        "incorrect": "'Sing' and 'ring' rhyme because they both end with 'ing'."
+      }
+    },
+    {
+      "questionId": "p-blend-001",
+      "questionType": "Sound Blending",
+      "difficulty": 1,
+      "prompt": "Listen to these sounds: /p/ /o/ /p/. What word do they make?",
+      "audioPrompt": "/audio/blending/p-o-p.mp3",
+      "options": ["pop", "pot", "top", "map"],
+      "correctAnswer": "pop",
+      "phonemesFeatured": ["/p/", "/o/"],
+      "hints": ["Say each sound slowly, then try to say them faster together."],
+      "feedback": {
+        "correct": "Perfect! When you blend /p/ /o/ /p/, you get 'pop'.",
+        "incorrect": "When you blend /p/ /o/ /p/, you get 'pop'. Try again by saying the sounds faster together."
+      }
+    },
+    {
+      "questionId": "qu-alliteration-001",
+      "questionType": "Alliteration",
+      "difficulty": 2,
+      "prompt": "Which words start with the same sound as 'quick'?",
+      "audioPrompt": "/audio/words/quick.mp3",
+      "options": ["queen", "kick", "pink", "win"],
+      "correctAnswer": "queen",
+      "phonemesFeatured": ["/kw/"],
+      "hints": ["Listen for the first sound in each word."],
+      "feedback": {
+        "correct": "Great job! 'Quick' and 'queen' both start with the /kw/ sound.",
+        "incorrect": "'Quick' and 'queen' both start with the /kw/ sound."
+      }
+    },
+    {
+      "questionId": "r-position-001",
+      "questionType": "Initial, Medial, Final Sound",
+      "difficulty": 1,
+      "prompt": "Where do you hear the /r/ sound in 'carrot'?",
+      "audioPrompt": "/audio/words/carrot.mp3",
+      "options": ["Beginning", "Middle", "End", "Middle and End"],
+      "correctAnswer": "Middle",
+      "phonemesFeatured": ["/r/"],
+      "hints": ["Say the word slowly and listen for the /r/ sound."],
+      "feedback": {
+        "correct": "Excellent! In 'carrot', you hear the /r/ sound in the middle.",
+        "incorrect": "In 'carrot', you hear the /r/ sound in the middle."
+      }
+    },
+    {
+      "questionId": "s-sound-id-001",
+      "questionType": "Sound Identification",
+      "difficulty": 1,
+      "prompt": "Which letter makes the /s/ sound as in 'sit'?",
+      "audioPrompt": "/audio/phonemes/s-sound.mp3",
+      "options": ["s", "z", "c", "f"],
+      "correctAnswer": "s",
+      "phonemesFeatured": ["/s/"],
+      "hints": ["This sound is made by pushing air through your teeth, like a snake."],
+      "feedback": {
+        "correct": "Great job! The letter 's' makes the /s/ sound.",
+        "incorrect": "The letter 's' makes the /s/ sound. Listen again and try once more."
+      }
+    },
+    {
+      "questionId": "sh-rhyme-001",
+      "questionType": "Rhyming",
+      "difficulty": 2,
+      "prompt": "Which word rhymes with 'shop'?",
+      "audioPrompt": "/audio/words/shop.mp3",
+      "options": ["ship", "top", "shoe", "shell"],
+      "correctAnswer": "top",
+      "phonemesFeatured": ["/sh/", "/o/", "/p/"],
+      "hints": ["Listen for words that end with the same sound."],
+      "feedback": {
+        "correct": "Excellent! 'Shop' and 'top' rhyme because they both end with 'op'.",
+        "incorrect": "'Shop' and 'top' rhyme because they both end with 'op'."
+      }
+    },
+    {
+      "questionId": "t-blend-001",
+      "questionType": "Sound Blending",
+      "difficulty": 1,
+      "prompt": "Listen to these sounds: /t/ /a/ /p/. What word do they make?",
+      "audioPrompt": "/audio/blending/t-a-p.mp3",
+      "options": ["tap", "top", "tip", "ten"],
+      "correctAnswer": "tap",
+      "phonemesFeatured": ["/t/", "/a/", "/p/"],
+      "hints": ["Say each sound slowly, then try to say them faster together."],
+      "feedback": {
+        "correct": "Perfect! When you blend /t/ /a/ /p/, you get 'tap'.",
+        "incorrect": "When you blend /t/ /a/ /p/, you get 'tap'. Try again by saying the sounds faster together."
+      }
+    },
+    {
+      "questionId": "th-alliteration-001",
+      "questionType": "Alliteration",
+      "difficulty": 2,
+      "prompt": "Which words start with the same sound as 'thing'?",
+      "audioPrompt": "/audio/words/thing.mp3",
+      "options": ["think", "sing", "fish", "ring"],
+      "correctAnswer": "think",
+      "phonemesFeatured": ["/th/"],
+      "hints": ["Listen for the first sound in each word."],
+      "feedback": {
+        "correct": "Great job! 'Thing' and 'think' both start with the /th/ sound.",
+        "incorrect": "'Thing' and 'think' both start with the /th/ sound."
+      }
+    }
+  ],
+  "adaptiveRules": {
+    "advancementThreshold": 80,
+    "remediationThreshold": 60,
+    "maximumQuestions": 25,
+    "minimumQuestions": 15
+  },
+  "scoring": {
+    "passingScore": 75,
+    "pointsPerQuestion": 4,
+    "penaltyForHints": 1
+  }
+}

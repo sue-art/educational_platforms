@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { usePhonics } from '../../context/PhonicsContext';
-import { useStudent } from '../../../../../contexts/StudentContext';
-import WordList from '../presentational/assessments/WordList';
-import MatchingWords from '../presentational/assessments/MatchingWords';
-import WordQuiz from '../presentational/assessments/WordQuiz';
-import { Button } from '@/components/ui/button'; // Using shadcn Button
-import PropTypes from 'prop-types';
-
+import React, { useState, useEffect } from "react";
+import { usePhonics } from "../../context/PhonicsContext";
+import { useStudent } from "../../../../../contexts/StudentContext";
+import WordList from "../presentational/assessments/WordList.jsx";
+import MatchingWords from "../presentational/assessments/MatchingWords";
+import WordQuiz from "../presentational/assessments/WordQuiz";
+import { Button } from "@/components/ui/button"; // Using shadcn Button
+import PropTypes from "prop-types";
 
 // Placeholder for a loading spinner or skeleton
 const LoadingSpinner = () => (
@@ -28,7 +27,12 @@ const AssessmentContainer = () => {
     // loading: phonicsLoading // Potential loading from context
   } = usePhonics();
 
-  const { student, updateProgress, loading: studentLoading, error: studentError } = useStudent();
+  const {
+    student,
+    updateProgress,
+    loading: studentLoading,
+    error: studentError,
+  } = useStudent();
 
   const [questions, setQuestions] = useState([]);
   const [assessmentLoading, setAssessmentLoading] = useState(true); // Local loading for questions
@@ -51,26 +55,37 @@ const AssessmentContainer = () => {
         // console.log(`Fetching questions for lesson ${currentLesson.id}, assessment ${currentAssessment.id} (${assessmentType})`);
 
         // Using placeholder questions based on totalQuestions from context
-        const numQuestions = assessmentProgress.totalQuestions > 0 ? assessmentProgress.totalQuestions : 10; // Fallback
-        const questionsData = Array(numQuestions).fill(null).map((_, index) => ({
-          id: `${currentAssessment.id}-${index + 1}`, // Unique question ID
-          question: `Sample question ${index + 1} for ${assessmentType} "${currentLesson.name}"`,
-          options: ['Option A', 'Option B', 'Option C', 'Option D'],
-          correctAnswer: 'Option A', // This should come from your data source
-        }));
+        const numQuestions =
+          assessmentProgress.totalQuestions > 0
+            ? assessmentProgress.totalQuestions
+            : 10; // Fallback
+        const questionsData = Array(numQuestions)
+          .fill(null)
+          .map((_, index) => ({
+            id: `${currentAssessment.id}-${index + 1}`, // Unique question ID
+            question: `Sample question ${index + 1} for ${assessmentType} "${
+              currentLesson.name
+            }"`,
+            options: ["Option A", "Option B", "Option C", "Option D"],
+            correctAnswer: "Option A", // This should come from your data source
+          }));
 
         setQuestions(questionsData);
       } catch (err) {
-        console.error('Failed to fetch questions:', err);
-        setAssessmentError(err.message || 'Failed to fetch questions');
+        console.error("Failed to fetch questions:", err);
+        setAssessmentError(err.message || "Failed to fetch questions");
       } finally {
         setAssessmentLoading(false);
       }
     };
 
     fetchQuestions();
-  }, [currentLesson, currentAssessment, assessmentType, assessmentProgress.totalQuestions]);
-
+  }, [
+    currentLesson,
+    currentAssessment,
+    assessmentType,
+    assessmentProgress.totalQuestions,
+  ]);
 
   const handleAnswer = (isCorrect) => {
     submitAnswer(isCorrect); // This will advance question index and complete assessment if last question
@@ -86,8 +101,12 @@ const AssessmentContainer = () => {
   };
 
   const handleAssessmentCompletedAndStudentProgressUpdate = () => {
-    if (student && currentLesson && typeof assessmentProgress.score === 'number') {
-        updateProgress('phonics', currentLesson.id, assessmentProgress.score);
+    if (
+      student &&
+      currentLesson &&
+      typeof assessmentProgress.score === "number"
+    ) {
+      updateProgress("phonics", currentLesson.id, assessmentProgress.score);
     }
   };
 
@@ -96,28 +115,49 @@ const AssessmentContainer = () => {
     if (assessmentProgress.completed) {
       handleAssessmentCompletedAndStudentProgressUpdate();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [assessmentProgress.completed]); // Only re-run if completion status changes
 
-
-  if (studentLoading || assessmentLoading ) return <LoadingSpinner />;
-  if (studentError) return <div className="text-destructive p-4">Error loading student data: {studentError}</div>;
-  if (assessmentError) return <div className="text-destructive p-4">Error loading assessment: {assessmentError}</div>;
+  if (studentLoading || assessmentLoading) return <LoadingSpinner />;
+  if (studentError)
+    return (
+      <div className="text-destructive p-4">
+        Error loading student data: {studentError}
+      </div>
+    );
+  if (assessmentError)
+    return (
+      <div className="text-destructive p-4">
+        Error loading assessment: {assessmentError}
+      </div>
+    );
 
   if (!currentLesson || !currentAssessment) {
-    return <div className="text-muted-foreground p-4">Assessment details are not available. Please select a lesson and assessment type.</div>;
+    return (
+      <div className="text-muted-foreground p-4">
+        Assessment details are not available. Please select a lesson and
+        assessment type.
+      </div>
+    );
   }
-
 
   if (assessmentProgress.completed) {
     return (
       <div className="assessment-completed text-center p-6 bg-card rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold mb-4 text-primary">Assessment Completed!</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-primary">
+          Assessment Completed!
+        </h2>
         {student && <p className="text-lg mb-2">Well done, {student.name}!</p>}
         <div className="score-display mb-6">
-          <p className="text-xl">Your score: <span className="font-bold text-primary">{assessmentProgress.score}%</span></p>
+          <p className="text-xl">
+            Your score:{" "}
+            <span className="font-bold text-primary">
+              {assessmentProgress.score}%
+            </span>
+          </p>
           <p className="text-muted-foreground">
-            Correct answers: {assessmentProgress.correctAnswers} out of {assessmentProgress.totalQuestions}
+            Correct answers: {assessmentProgress.correctAnswers} out of{" "}
+            {assessmentProgress.totalQuestions}
           </p>
         </div>
         <div className="action-buttons space-x-4">
@@ -135,13 +175,21 @@ const AssessmentContainer = () => {
   const currentQuestion = questions[assessmentProgress.currentQuestionIndex];
 
   if (!currentQuestion) {
-     if (assessmentProgress.totalQuestions > 0 && assessmentProgress.currentQuestionIndex >= assessmentProgress.totalQuestions) {
-        // This case should be covered by assessmentProgress.completed, but as a fallback:
-        return <div className="text-muted-foreground p-4">Preparing results... If you see this for long, there might be an issue.</div>;
-     }
+    if (
+      assessmentProgress.totalQuestions > 0 &&
+      assessmentProgress.currentQuestionIndex >=
+        assessmentProgress.totalQuestions
+    ) {
+      // This case should be covered by assessmentProgress.completed, but as a fallback:
+      return (
+        <div className="text-muted-foreground p-4">
+          Preparing results... If you see this for long, there might be an
+          issue.
+        </div>
+      );
+    }
     return <div className="text-muted-foreground p-4">Loading question...</div>;
   }
-
 
   const renderAssessmentTypeComponent = () => {
     const commonProps = {
@@ -152,14 +200,18 @@ const AssessmentContainer = () => {
     };
 
     switch (assessmentType) {
-      case 'Word list':
+      case "Word list":
         return <WordList {...commonProps} />;
-      case 'Matching words':
+      case "Matching words":
         return <MatchingWords {...commonProps} />;
-      case 'Word quiz':
+      case "Word quiz":
         return <WordQuiz {...commonProps} />;
       default:
-        return <div className="text-destructive">Unknown assessment type: {assessmentType}</div>;
+        return (
+          <div className="text-destructive">
+            Unknown assessment type: {assessmentType}
+          </div>
+        );
     }
   };
 
@@ -175,12 +227,19 @@ const AssessmentContainer = () => {
       </div>
 
       <div className="progress-indicator text-sm text-muted-foreground mb-6">
-        Question {assessmentProgress.currentQuestionIndex + 1} of {assessmentProgress.totalQuestions}
+        Question {assessmentProgress.currentQuestionIndex + 1} of{" "}
+        {assessmentProgress.totalQuestions}
         <div className="w-full bg-muted rounded-full h-2.5 mt-1">
           <div
             className="bg-primary h-2.5 rounded-full transition-all duration-300 ease-out"
-            style={{ width: `${(assessmentProgress.currentQuestionIndex / assessmentProgress.totalQuestions) * 100}%` }}>
-          </div>
+            style={{
+              width: `${
+                (assessmentProgress.currentQuestionIndex /
+                  assessmentProgress.totalQuestions) *
+                100
+              }%`,
+            }}
+          ></div>
         </div>
       </div>
 

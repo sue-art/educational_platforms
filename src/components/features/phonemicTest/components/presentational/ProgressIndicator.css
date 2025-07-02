@@ -1,0 +1,94 @@
+/* ProgressIndicator.css */
+
+.progress-indicator {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/* Bar variant styles */
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-text {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Dots variant styles */
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0.5rem 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+.dot.completed {
+  background-color: #4caf50;
+}
+
+.dot.current {
+  background-color: #2196f3;
+  transform: scale(1.2);
+}
+
+/* Fraction variant styles */
+.progress-fraction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.current-question {
+  color: #2196f3;
+}
+
+.separator {
+  margin: 0 4px;
+  color: #757575;
+}
+
+.total-questions {
+  color: #757575;
+}
+
+/* Score display styles */
+.score-display {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.score-label {
+  font-weight: bold;
+}
+
+.score-value {
+  color: #2196f3;
+}

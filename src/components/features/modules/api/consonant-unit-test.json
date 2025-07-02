@@ -1,0 +1,215 @@
+
+{
+  "testId": "consonant-unit-test-001",
+  "testName": "Consonant Unit Test - /b/ Sound",
+  "description": "This test assesses the understanding and recognition of the /b/ sound in various contexts, including sound identification, blending, and rhyming.",
+  "phonemeId": "/B/",
+  "wordList": {
+    "ball": [
+      "b",
+      "a",
+      "ll"
+    ],
+    "bat": [
+      "b",
+      "a",
+      "t"
+    ],
+    "bus": [
+      "b",
+      "u",
+      "s"
+    ],
+    "big": [
+      "b",
+      "i",
+      "g"
+    ],
+    "box": [
+      "b",
+      "o",
+      "x"
+    ],
+    "bullon": [
+      "b",
+      "u",
+      "ll",
+      "o",
+      "n"
+    ]
+  },
+  "readingLevel": 1,
+  "targetAgeRange": "4-7 years",
+  "estimatedTimeMinutes": 15,
+  "skillsAssessed": [
+    "Phonemic Awareness",
+    "Letter-Sound Correspondence",
+    "Sound Identification",
+    "Rhyming",
+    "Sound Blending",
+    "Alliteration",
+    "Sound Position Recognition",
+    "Spelling"
+  ],
+  "questions": [
+    {
+      "questionId": "b-sound-id-001",
+      "questionType": "Sound Identification",
+      "difficulty": 1,
+      "testType":"quiz",
+      "prompt": "Which letter makes the /b/ sound as in 'ball'?",
+      "audioPrompt": "/audio/phonemes/b-sound.mp3",
+      "options": ["b", "d", "p", "g"],
+      "correctAnswer": "b",
+      "phonemesFeatured": ["/b/"],
+      "hints": ["This letter makes a sound with your lips pressed together."],
+      "feedback": {
+        "correct": "Great job! The letter 'b' makes the /b/ sound.",
+        "incorrect": "The letter 'b' makes the /b/ sound. Listen again and try once more."
+      }
+    },
+    {
+      "questionId": "b-sound-blending-001",
+      "questionType": "Sound Blending",
+      "difficulty": 2,
+            "testType":"quiz",
+
+      "prompt": "Blend the sounds to form a word: /b/ + /a/ + /t/",
+      "audioPrompt": "/audio/blending/bat.mp3",
+      "options": ["bat", "cat", "rat", "hat"],
+      "correctAnswer": "bat",
+      "phonemesFeatured": ["/b/", "/a/", "/t/"],
+      "hints": ["Think of a word that rhymes with 'cat'."],
+      "feedback": {
+        "correct": "Well done! The word is 'bat'.",
+        "incorrect": "Try blending the sounds again. The correct answer is 'bat'."
+      }
+    },
+    {
+      "questionId": "b-sound-rhyming-001",
+      "questionType": "Rhyming",
+      "difficulty": 1,
+            "testType":"quiz",
+
+      "prompt": "Which word rhymes with 'ball'?",
+      "audioPrompt": "/audio/rhyming/ball.mp3",
+      "options": ["mall", "call", "fall", "all"],
+      "correctAnswer": ["mall", "call", "fall", "all"],
+      "phonemesFeatured": ["/b/", "/a/", "/l/"],
+      "hints": ["These words have the same ending sound as 'ball'."],
+      "feedback": {
+        "correct": "Excellent! All these words rhyme with 'ball'.",
+        "incorrect": "Remember, rhyming words have the same ending sound. Try again!"
+      }
+    },
+    {
+      "questionId": "b-sound-alliteration-001",
+      "questionType": "Alliteration",
+      "difficulty": 2,
+            "testType":"quiz",
+
+      "prompt": "Which of these words starts with the /b/ sound?",
+      "audioPrompt": "/audio/alliteration/b-sound.mp3",
+      "options": ["bat", "cat", "dog", "fish"],
+      "correctAnswer": "bat",
+      "phonemesFeatured": ["/b/"],
+      "hints": ["Listen for the /b/ sound at the beginning of the word."],
+      "feedback": {
+        "correct": "Great job! 'Bat' starts with the /b/ sound.",
+        "incorrect": "Remember, alliteration means the same starting sound. Try again!"
+      }
+    },
+    {
+      "questionId": "b-sound-position-001",
+      "questionType": "Sound Position Recognition",
+      "difficulty": 1,
+      "testType":"quiz",
+      "prompt": "In which position does the /b/ sound appear in the word 'box'?",
+      "audioPrompt": "/audio/blending/box.mp3",
+      "options": ["Beginning", "Middle", "End"],
+      "correctAnswer": "Beginning",
+      "phonemesFeatured": ["/b/", "/o/", "/x/"],
+      "hints": ["The /b/ sound is at the start of the word."],
+      "feedback": {
+        "correct": "Correct! The /b/ sound is at the beginning of 'box'.",
+        "incorrect": "The /b/ sound is at the beginning of 'box'. Listen again and try once more."
+      }
+    },
+    {
+      "questionId": "b-sound-position-001",
+      "questionType": "Sound Position Recognition",
+      "difficulty": 1,
+      "prompt": "Which letter(s) make the /b/ sound in bullon?",
+        "audioPrompt": "/audio/blending/bullon.mp3",
+        "options": ["b", "u", "l", "o", "n"],
+        "correctAnswer": "b",
+        "phonemesFeatured": ["/b/", "/u/", "/l/", "/o/", "/n/"],
+        "hints": ["The /b/ sound is at the start of the word."],
+        "feedback": {
+            "correct": "Correct! The letter 'b' makes the /b/ sound in 'bullon'.",
+            "incorrect": "The letter 'b' makes the /b/ sound in 'bullon'. Listen again and try once more."
+        }
+    },
+    {
+      "questionId": "b-sound-spelling-001",
+      "questionType": "Spelling",
+      "difficulty": 2,
+      "prompt": "How do you spell the word that starts with the /b/ sound and rhymes with 'cat'?",
+      "audioPrompt": "/audio/blending/bat.mp3",
+      "options": ["bat", "cat", "rat", "hat"],
+      "correctAnswer": "bat",
+      "phonemesFeatured": ["/b/", "/a/", "/t/"],
+      "hints": ["Think of a word that starts with the /b/ sound."],
+      "feedback": {
+        "correct": "Well done! The word is spelled 'bat'.",
+        "incorrect": "Try spelling the word again. The correct answer is 'bat'."
+      }
+    },
+    {
+      "questionId": "b-sound-spelling-002",
+      "questionType": "Spelling",
+      "difficulty": 2,
+      "prompt": "Spell the word that means: 'This is a round object that you can throw or kick.'",
+      "audioPrompt": "/audio/blending/ball.mp3",
+      "options": ["ball", "call", "mall", "fall"],
+      "correctAnswer": "ball",
+      "phonemesFeatured": ["/b/", "/a/", "/ll/"],
+      "hints": ["Think of a word that starts with the /b/ sound and is round."],
+      "feedback": {
+        "correct": "Great job! The word is spelled 'ball'.",
+        "incorrect": "Try spelling the word again. The correct answer is 'ball'."
+      }
+    }
+    ],
+    "resources": {
+        "audioResources": [
+            {
+            "fileName": "b-sound.mp3",
+            "description": "Audio of the /b/ sound",
+            "url": "/audio/phonemes/b-sound.mp3"
+            },
+            {
+            "fileName": "bat.mp3",
+            "description": "Audio of the word 'bat'",
+            "url": "/audio/blending/bat.mp3"
+            },
+            {
+            "fileName": "ball.mp3",
+            "description": "Audio of the word 'ball'",
+            "url": "/audio/rhyming/ball.mp3"
+            },
+            {
+            "fileName": "b-sound-alliteration.mp3",
+            "description": "Audio of words starting with the /b/ sound",
+            "url": "/audio/alliteration/b-sound.mp3"
+            }
+        ],
+        "visualResources": [
+            {
+            "fileName": "b-letter.png",
+            "description": "Image of the letter 'b'",
+                "url": "/images/b-letter.png"
+                }
+            ]
+        }
+    }

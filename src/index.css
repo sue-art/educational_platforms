@@ -83,3 +83,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.bg-background {
+  background-color: #fcf9e5;
+  color: #333;
+}

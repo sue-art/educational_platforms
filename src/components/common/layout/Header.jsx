@@ -1,20 +1,75 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming react-router-dom will be used for navigation
+import React from "react";
+import { Link } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth"; // Add this import
+import { Button } from "@/components/ui/button"; // shadcn Button
 
 const Header = () => {
+  const { isAuthenticated, user, logout } = useAuth(); // Changed from useStudent to useAuth
+
+  const handleLogout = () => {
+    logout();
+  };
+
   return (
-    <header className="bg-primary text-primary-foreground p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold hover:text-primary-foreground/80">
-          Learning App
-        </Link>
-        <nav className="space-x-4">
-          <Link to="/" className="hover:text-primary-foreground/80">Home</Link>
-          <Link to="/phonics" className="hover:text-primary-foreground/80">Phonics</Link>
-          <Link to="/reading" className="hover:text-primary-foreground/80">Reading</Link>
-          <Link to="/writing" className="hover:text-primary-foreground/80">Writing</Link>
-          {/* Add other navigation links as needed */}
-        </nav>
+    <header className="sticky top-0 z-50 w-full border-b bg-emerald-300 rounded-lg p-4 text-white backdrop-blur">
+      <div className="container flex h-16 items-center justify-between">
+        <div className="flex items-center gap-6">
+          <Link to="/" className="text-2xl font-bold">
+            Reading Threads
+          </Link>
+
+          <nav className="hidden md:flex items-center gap-6">
+            <Link to="/" className="text-sm font-medium hover:text-primary">
+              Home
+            </Link>
+            <Link
+              to="/phonics"
+              className="text-sm font-medium hover:text-primary"
+            >
+              Phonics
+            </Link>
+            <Link
+              to="/reading"
+              className="text-sm font-medium hover:text-primary"
+            >
+              Reading
+            </Link>
+            <Link
+              to="/about"
+              className="text-sm font-medium hover:text-primary"
+            >
+              About
+            </Link>
+          </nav>
+        </div>
+
+        <div className="flex items-center gap-4">
+          {isAuthenticated ? (
+            <>
+              <Link to="/dashboard">
+                <Button variant="ghost" size="sm">
+                  Dashboard
+                </Button>
+              </Link>
+              <Button variant="outline" size="sm" onClick={handleLogout}>
+                Logout
+              </Button>
+            </>
+          ) : (
+            <>
+              <Link to="/login">
+                <Button variant="ghost" size="sm">
+                  Login
+                </Button>
+              </Link>
+              <Link to="/register">
+                <Button variant="primary" size="sm">
+                  Sign Up
+                </Button>
+              </Link>
+            </>
+          )}
+        </div>
       </div>
     </header>
   );

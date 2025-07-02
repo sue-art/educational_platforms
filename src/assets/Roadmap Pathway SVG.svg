@@ -1,0 +1,18 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .road {
+      fill: #2a3990;
+      stroke: #ffffff;
+      stroke-width: 6;
+      stroke-dasharray: 20, 20;
+    }
+  </style>
+  
+  <!-- Main roadmap pathway -->
+  <path class="road" d="M0,350 
+    C100,350 150,350 200,300 
+    C250,250 300,200 350,250 
+    C400,300 450,350 500,300 
+    C550,250 600,200 650,250 
+    C700,300 750,350 800,300" />
+</svg>
